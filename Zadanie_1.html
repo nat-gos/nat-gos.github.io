@@ -65,25 +65,30 @@
     <p style="font-family: 'Lucida Handwriting', cursive; font-size:22px;">Znowu jakiś tekst.</p>
   <hr>
   
-  <p style="text-align: right; margin-top: 40px;">
-    <a href="index.html">Powrót do strony głównej</a>
-  </p>
-  <style>
-  p a
-    {text-decoration: none;
+  <a href="index.html" style="
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     color: #FFFFFF;
     background-color: #6A4CA0;
     padding: 10px 20px;
     border-radius: 8px;
     font-weight: bold;
     font-size: 18px;
-    transition: all 0.4s ease;
-    display: inline-block;}
-  p a:hover
-    {background-color: #6C5DD3;
+    display: inline-block;
+    transition: all 0.4s ease;">
+    Powrót do strony głównej
+</a>
+
+<style>
+a:hover {
+    background-color: #6C5DD3;
     color: #FFFACD;
     transform: scale(1.10);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5), inset 0 0 10px rgba(0,0,0,0.2);}
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5), inset 0 0 10px rgba(0,0,0,0.2);
+}
+</style>
 </style>
 </body>
 </html>
