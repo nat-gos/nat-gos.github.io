@@ -4,39 +4,43 @@
   <meta charset="utf-8">
   <title>Zadanie 1</title>
   <style>
-    * {box-sizing: border-box;
-    word-wrap: break-word;
-    overflow-wrap: break-word;}
+    /*Ogólne ustawienia*/
+    * {box-sizing: border-box; /**/
+      word-wrap: break-word; /**/
+      overflow-wrap: break-word; /**/
+      margin: 0; /**/
+      padding: 0;} /**/
     body{
       font-family: 'Agdasima', sans-serif;
       background: linear-gradient(135deg, #B3CFF0, #D9C2F0);
       padding: 24px;
       line-height: 1.6;
-      margin: 0;
-      overflow-x: hidden;
-      padding-bottom: 100px;}
+      overflow-x: hidden; /*Usuwa problem przewijania się strony w bok*/
+      padding-bottom: 100px;} /*Daje miejsce na pasek na dole strony*/
     h1
       {color: #FFFFFF;
       background-color: #6A4CA0;
       font-family: 'Agdasima', sans-serif;
-      font-size: 42px;
+      font-size: 40px;
       padding: 15px 30px;
       border-radius: 12px;
       display: inline-block;
       text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-      margin: 20px auto;}
+      margin: 20px auto;
+      text-align: center;}
     h2
       {color: #2C1A73;
-      font-family: 'Agdasima', sans-serif;
-      font-size: 32px;}
+      font-size: 32px;
+      margin: 20px 0;}
     p
       {color:#3A2B7A;
-      font-family: 'Agdasima', sans-serif;
-      font-size: 24px;}
+      font-size: 24px;
+      margin: 10px 0;
+      word-break: break-word;} /*Zawija długie teksty*/
     a
       {color:#6A4CA0;
-      font-family: 'Agdasima', sans-serif;
-      text-decoration: none;}
+      text-decoration: none;
+      transition: all 0.4s ease;}
     a:hover
       {background-color: #6C5DD3;
       color: #FFFACD;
@@ -45,6 +49,7 @@
     hr
       {border: 1px solid #2C1A73;
       margin: 20px 0;}
+    
   </style>
 </head>
 <body>
@@ -90,8 +95,7 @@
     z-index: 1000;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    box-sizing: border-box;">
+    align-items: center;">
     
     <a href="index.html" style="
         text-decoration: none;
@@ -100,8 +104,7 @@
         padding: 10px 20px;
         border-radius: 8px;
         font-weight: bold;
-        font-size: 18px;
-        transition: all 0.4s ease;">
+        font-size: 18px;">
         Powrót do strony głównej
     </a>
 </div>
