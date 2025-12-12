@@ -11,9 +11,26 @@
       padding: 24px;
       line-height: 1.6;}
     h1
-      {color: #2C1A73;
-      font-size: 38px;
-      text-align: center;}
+      {h1 {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  font-family: 'Agdasima', sans-serif;
+  font-size: 38px;
+  color: #FFFFFF;
+  text-align: center;
+  box-shadow: inset 0 -6px 12px rgba(255, 255, 255, 0.25), 0 6px 20px rgba(0,0,0,0.3);
+  text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0 0 4px #000;
+  background: linear-gradient(270deg, #5E50FF, #7A68FF, #A079FF, #C6A3FF, #8C9EFF, #5E50FF);
+  background-size: 600% 600%;
+  animation: gradientMove 25s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}}
     body > div
       {display: flex;
       gap: 20px;
