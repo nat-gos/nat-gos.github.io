@@ -26,14 +26,21 @@
       color: #fff;
       background: linear-gradient(135deg, #6A4CA0, #8E54E9);
       text-align: center;
-      border-radius: 0 0 12px 12px;/* lekko zaokrąglone tylko na dole */
+      border-radius: 0 0 12px 12px;/*lekko zaokrąglone tylko dole*/
       box-shadow: 0 6px 20px rgba(0,0,0,0.3);}
     h1:hover 
       {box-shadow: 0 12px 30px rgba(0,0,0,0.3);
       background: linear-gradient(135deg, #8E54E9, #6A4CA0);
       color: #FFD700;
-      transform: translateY(-3px) scale(1.05);
-      text-shadow: 2px 2px 12px rgba(0,0,0,0.5), 0 0 8px rgba(255,255,255,0.3);}
+      text-shadow:
+      0 0 5px #FF00FF,
+      0 0 10px #FF00FF,
+      0 0 20px #00FFFF,
+      0 0 30px #00FFFF,
+      0 0 40px #FF00FF,
+      0 0 55px #FF00FF,
+      0 0 75px #00FFFF;
+      transform: translateY(-3px) scale(1.05);}
       /*Zmienia wygląd dla telefonów*/
       @media (max-width: 600px) {
    h1
