@@ -229,6 +229,28 @@
       ">Strona główna</a>
     </div>
     
+    <div style="position: relative;">
+    <a href="#" style="
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        border-radius: 8px;
+        display: block;
+      ">Menu ▼</a>
+
+    <div style="
+        display: none;
+        position: absolute;
+        bottom: 45px;
+        left: 0;
+        background: linear-gradient(90deg, #5E50FF, #7A68FF, #A079FF, #8C9EFF);
+        border-radius: 5px;
+        overflow: hidden;
+        white-space: nowrap;
+      ">
+      <a href="zadanie1.html" style="display:block; padding:8px 16px; color:#fff; text-decoration:none;">Zadanie 1</a>
+    </div>
+      
     <a href="index.html" style="
         text-decoration: none;
         color: #FFFFFF;
@@ -241,6 +263,32 @@
     </a>
 </div>
 
-  
+  <script>
+  // Pokazywanie submenu przy najechaniu
+  const menu = document.querySelectorAll('div[style*="position: relative;"]');
+  menu.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const submenu = item.querySelector('div');
+      if(submenu) submenu.style.display = 'block';
+    });
+    item.addEventListener('mouseleave', () => {
+      const submenu = item.querySelector('div');
+      if(submenu) submenu.style.display = 'none';
+    });
+  });
+unction toggleMenu(event) {
+  event.stopPropagation(); // zapobiega zamknięciu przy klikaniu w menu
+  var submenu = document.getElementById("submenu");
+  if (submenu.style.display === "block") {
+    submenu.style.display = "none";
+  } else {
+    submenu.style.display = "block";
+  }
+}
+document.addEventListener("click", function() {
+  var submenu = document.getElementById("submenu");
+  if(submenu) submenu.style.display = "none";
+});</script>
+    
 </body>
 </html>
