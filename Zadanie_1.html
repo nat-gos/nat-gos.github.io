@@ -18,18 +18,17 @@
       overflow-x: hidden; /*Usuwa problem przewijania się strony w bok*/
       padding-bottom: 100px;} /*Daje miejsce na pasek na dole strony*/
     h1
-      {color: #FFFFFF;
-      background-color: #6A4CA0;
+      {display: block;
+      width: 100%;
+      padding: 20px 0;
+      margin-top: 40px; /*Odsunięcie od góry strony*/
       font-family: 'Agdasima', sans-serif;
-      font-size: 40px;
-      padding: 12px 26px;
-      border-radius: 10px;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      margin: 20px auto;
-      display: table;
-      transition: all 0.3s ease;
-      text-align: center;}
+      font-size: 42px;
+      color: #fff;
+      background: linear-gradient(135deg, #6A4CA0, #8E54E9);
+      text-align: center;
+      border-radius: 0 0 12px 12px;/* lekko zaokrąglone tylko na dole */
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);}
     h1:hover 
       {box-shadow: 0 12px 30px rgba(0,0,0,0.3);
       background: linear-gradient(135deg, #8E54E9, #6A4CA0);}
