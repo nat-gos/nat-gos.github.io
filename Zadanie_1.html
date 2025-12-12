@@ -4,6 +4,7 @@
   
   <!-- Informacje o stronie -->
   <meta charset="utf-8"> <!--Dzięki temu poprawnie zostaną wyświetlone wszystkie znaki tekstowe.-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Dla lepszego wyglądu na telefonie.-->
   <title>Zadanie 1</title>
   <style>
     
@@ -108,6 +109,23 @@
       border-radius: 4px;
       background: linear-gradient(90deg, #6A4CA0, #8E54E9);
       margin: 28px 0;}
+
+    @media only screen and (max-width: 768px)
+  {h1
+    {font-size: 28px; /* Zmniejsza czcionkę nagłówka na urządzeniach mobilnych */
+    padding: 15px 0;} /* Mniejsze paddingi */
+  p
+    {font-size: 20px; /* Zwiększa rozmiar czcionki w paragrafach */
+    margin: 10px 0;}
+  body
+    {padding: 10px;} /* Mniejsze marginesy dla urządzeń mobilnych */
+  a
+    {font-size: 22px; /* Zwiększa rozmiar czcionki linków */
+    text-decoration: none;
+    color: #6A4CA0;}
+  a:hover
+    {color: #D4AF37;
+    text-decoration: underline;}}
     
   </style>
 </head>
