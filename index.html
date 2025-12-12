@@ -15,33 +15,46 @@
     background-size: cover; /*Dopasowuje gradient do rozmiarów ekranu.*/
     background-attachment: fixed; /*Tło nie przesuwa się podczas przewijania.*/
     background-position: center center;} /*Ustawia tło w centrum strony.*/
-     
-  h1 /*Nagłówek*/
-    {font-family: 'Agdasima', sans-serif; /*Ustawia czcionkę nagłówka.*/
-    font-size: 38px; /*Ustawia rozmiar czcionki nagłówka.*/
-    color: #FFFFFF; /*Ustawia kolor tekstu nagłówka.*/
-    text-align: center; /*Wyrównuje nagłówek do środka.*/
-    padding: 10px 5px; /* Dodaje marginesy do nagłówka.*/
-    border-radius: 30px; /*Zaokrągla rogi nagłówka.*/
-    box-shadow: inset 0 -6px 12px rgba(255, 255, 255, 0.25), 0 6px 20px rgba(0,0,0,0.3); /*Ustawia cień wokół nagłówka.*/
-    text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0 0 4px #000; /*Ustawia cień dla tekstu nagłówka.*/
-    background: linear-gradient(270deg, #5E50FF, #7A68FF, #A079FF, #C6A3FF, #8C9EFF, #5E50FF); /*Ustawia tło nagłówka z gradientem.*/
-    background-size: 600% 600%; /*Ustawia rozmiar tła nagłówka z gradientem.*/
-    animation: gradientMove 25s ease infinite;} /*Ustawia animację tła nagłówka z gradientem.*/
 
-    @keyframes gradientMove { /*Pozwala na utworzenie animacji przesuwającego się gradientu.*/
+h1 /*Nagłówek*/
+      {font-family: 'Agdasima', sans-serif; /*Ustawia czcionkę nagłówka.*/
+      font-size: 42px; /*Ustawia rozmiar czcionki nagłówka.*/
+      color: #FFFFFF; /*Ustawia kolor tekstu nagłówka.*/
+      text-align: center; /*Wyrównuje nagłówek do środka.*/
+      padding: 20px 0; /*Dodaje marginesy do nagłówka.*/
+      border-radius: 0; /*Zaokrągla rogi nagłówka.*/
+      box-shadow: inset 0 -6px 12px rgba(255, 255, 255, 0.25), 0 6px 20px rgba(0,0,0,0.3); /*Ustawia cień wokół nagłówka.*/
+      text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px  2px 1px #000, 2px  2px 1px #000, 0 0 4px #000; /*Ustawia cień dla tekstu nagłówka.*/
+      transition: all 0.4s ease; /*Płynne przejście przy zmianie tła.*/
+      background: linear-gradient(270deg, #5E50FF, #7A68FF, #A079FF, #C6A3FF, #8C9EFF, #5E50FF); /*Ustawia tło nagłówka z gradientem.*/
+      background-size: 600% 600%; /*Ustawia rozmiar tła nagłówka z gradientem.*/
+      animation: gradientMove 25s ease infinite; /*Ustawia animację tła nagłówka z gradientem.*/
+      display: block; /*Nagłówek jest wyświetlany w osobnej lini, zajmując całą szerokość.*/
+      width: 100%;} /*Nagłówek zajmuje całą szerokość.*/
+
+      @keyframes gradientMove { /*Pozwala na utworzenie animacji przesuwającego się gradientu.*/
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }}
       /*Ustawienia pozycji gradientu. Początkowej, środkowej i końcowej.*/
 
-    h1:hover
-      {box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-      background: linear-gradient(270deg, #7A68FF, #A079FF, #C6A3FF, #D9BFFF, #8C9EFF, #7A68FF);
-      background-size: 600% 600%;
-      color: #E0FFFF;
-      text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0 0 4px #000, 0 0 10px #AFC8FF, 0 0 18px #8CA0FF, 0 0 28px #6E6BFF, 0 0 40px #5A3FE0;}
-
+     /* Ustawienia dla nagłówka podczas najechania na niego.*/
+    h1:hover 
+      {box-shadow: 0 12px 30px rgba(0,0,0,0.3); /* Zwiększa cień przy najechaniu */
+      background: linear-gradient(270deg, #7A68FF, #A079FF, #C6A3FF, #D9BFFF, #8C9EFF, #7A68FF); 
+      background-size: 600% 600%; /*Ustawia rozmiar gradientu podczas najeżdżania na niego myszką.*/
+      color: #E0FFFF; /*Zmiana koloru tekstu*/
+      text-shadow:
+      -2px -2px 1px #000,
+      2px -2px 1px #000,
+      -2px  2px 1px #000,
+      2px  2px 1px #000,
+      0 0 4px #000,
+      0 0 10px #AFC8FF,
+      0 0 18px #8CA0FF,
+      0 0 28px #6E6BFF,
+      0 0 40px #5A3FE0;} /*Zmiana cienia dla tekstu.*/
+    
     h2
       {color: #2C1A73;
       font-size: 32px;
@@ -117,6 +130,7 @@
   </div>
 </body>
 </html>
+
 
 
 
