@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--Dzięki temu, widok treści dostosowuje się do urządzenia.-->
   <title>Natalia Gospodarczyk</title>
   <style>
+    
   body /*Ogólne ustawienia stylu strony*/
     {font-family: 'Agdasima', sans-serif; /*Ustawia czcionkę strony.*/
     background: linear-gradient(135deg, #B3CFF0, #D9C2F0); /*Ustawia tło z gradientem.*/
@@ -34,6 +35,18 @@
       100% { background-position: 0% 50%; }}
       /*Ustawienia pozycji gradientu. Początkowej, środkowej i końcowej.*/
 
+    h1:hover
+      {box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(270deg, #7A68FF, #A079FF, #C6A3FF, #D9BFFF, #8C9EFF, #7A68FF);
+      background-size: 600% 600%;
+      color: #E0FFFF;
+      text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000, 0 0 4px #000, 0 0 10px #AFC8FF, 0 0 18px #8CA0FF, 0 0 28px #6E6BFF, 0 0 40px #5A3FE0;}
+
+    h2
+      {color: #2C1A73;
+      font-size: 32px;
+      margin: 20px 0;}
+
     /*Linki główne.*/
     body > div
       {display: flex; /*Łatwiej się ustawia inne elementy, jak zależy od ich poszczególnych ustawień.*/
@@ -59,6 +72,10 @@
 
     p /*Paragrafy.*/
       {color: #3A2B7A; /*Zmienia kolor tekstu paragrafów.*/
+      margin: 10px 0;
+      width: 100%;
+      hyphens: auto;
+      word-break: break-word;
       font-size: 24px;} /*Zmienia rozmiar czcionki paragrafów.*/
     
     a /*Linki*/
@@ -75,6 +92,20 @@
       border-radius: 4px; /*Zaokrągla rogi linków.*/
       background: linear-gradient(90deg, #6A4CA0, #8E54E9); /*Tło linii.*/
       margin: 28px 0;} /*Margines wokół lini.*/
+
+    @media only screen and (max-width: 768px) {
+    body
+      {padding-bottom: 120px;} /*Robi więcej miejsca na pasek dolny.*/
+    h1
+        {font-size: 28px;} /*Mniejszy rozmiar czcionki.*/
+    h2
+        {font-size: 20px;} /*Mniejszy rozmiar czcionki.*/
+    p
+      {font-size: 16px;
+      line-height: 1.4;}
+     a
+      {font-size: 18px;}}
+    
   </style>
 </head>
 <body>
@@ -86,6 +117,7 @@
   </div>
 </body>
 </html>
+
 
 
 
