@@ -26,21 +26,28 @@
       color: #fff;
       background: linear-gradient(135deg, #6A4CA0, #8E54E9);
       text-align: center;
-      border-radius: 0 0 12px 12px;/*lekko zaokrąglone tylko dole*/
-      box-shadow: 0 6px 20px rgba(0,0,0,0.3);}
+      border-radius: 0;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      margin: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      transition: all 0.4s ease;}
+      
     h1:hover 
       {box-shadow: 0 12px 30px rgba(0,0,0,0.3);
       background: linear-gradient(135deg, #8E54E9, #6A4CA0);
-      color: #FFD700;
+      color: #E0FFFF;
       text-shadow:
-      0 0 5px #FF00FF,
-      0 0 10px #FF00FF,
-      0 0 20px #00FFFF,
-      0 0 30px #00FFFF,
-      0 0 40px #FF00FF,
-      0 0 55px #FF00FF,
-      0 0 75px #00FFFF;
-      transform: translateY(-3px) scale(1.05);}
+      0 0 5px #E0FFFF,
+      0 0 10px #B2FFFF,
+      0 0 20px #80FFFF,
+      0 0 30px #66FFFF,
+      0 0 40px #4DFFFF,
+      0 0 55px #33FFFF,
+      0 0 75px #1AFFFF;
+      transform: translateY(-4px) scale(1.07);}
       /*Zmienia wygląd dla telefonów*/
       @media (max-width: 600px) {
    h1
