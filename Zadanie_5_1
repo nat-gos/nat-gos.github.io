@@ -2,11 +2,32 @@
 <html>
   <head>
     <title>Zadanie 5.1</title>
-    <meta charset="UTF-8"/>
-  </head>
+<meta charset="UTF-8">
+    <style>
+      table
+      {width: 70%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      text-align: center;
+      vertical-align: middle;}
+
+    th, td
+      {border: 1px solid #000;
+      padding: 8px;}
+    th
+      {background: linear-gradient(90deg, #5E50FF, #7A68FF, #A079FF, #8C9EFF);
+      color: white;}
+    li, dd, dt
+    {color: 3A2B7A}
+  </style>
+</head>
   <body>
     <h1>Plan lekcji</h1>
-    
+<hr>
+    <table>
+ 
+  </table>
+<hr>
     <a href="index.html">Strona główna</a>
   </body>
 </html>
